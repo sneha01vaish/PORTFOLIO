@@ -1,0 +1,289 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="icon" type="image/x-icon" href="static/images/image.png" >
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    {% comment %}=============== navbar============= {% endcomment %}
+    <nav id ="navbar" class = "flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home<i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#About us" class="t-white roboto">About me<i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#Skills" class="t-white roboto">Skills<i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#Project" class="t-white roboto">Projects<i class="fa-solid fa-project-diagram"></i></a></li>
+                <li><a href="#Certificates" class="t-white roboto">Awards<i class="fa-solid fa-rocket"></i></a></li>
+
+                <li><a href="#Contact" class="t-white roboto">Contact<i class="fa-solid fa-rocket"></i></a></li>
+                
+            </ul>
+
+        </div>
+    </nav>
+    {% comment %}===============homesection============== {% endcomment %}
+   <!-- Home Section -->
+<!-- Home Section -->
+<section id="home" class="home-section">
+    <div class="home-container flex s-around">
+        <div class="home-left">
+            <div class="home-content">
+                <h1 class="home-title t-white">Hi, I'm Sneha Vaish</h1>
+                <p class="home-description t-white">Engineering Student | Developer</p>
+                <a href="{% static 'images/RESUME.pdf' %}" target="_blank" class="btn">Resume</a>
+                <a href="https://www.linkedin.com/in/sneha-vaish-850698204/" target="_blank" class="btn">Let's talk</a>
+            </div>
+        </div>
+        <div class="home-right">
+            <div class="circle">
+                <img src="{% static 'images/mypic.png' %}" alt="Sneha Vaish" class="home-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    {% comment %} ======about section======== {% endcomment %}
+<!-- About Section -->
+<section id="About us" class="about-section">
+    <h1 class="section-title t-center t-white">About Me</h1>
+    <div class="about-container flex s-around">
+        <div class="about-content">
+            <h2 class="about-heading t-white">Hi, I'm Sneha Vaish</h2>
+            <p class="about-description t-white">I'm a creative and innovative engineering student with a passion for problem-solving. I love working with teams and thrive under pressure. My goal is to start a career as a software developer, contributing my skills to innovative projects.</p>
+            <p class="about-description t-white">In addition to my technical skills, I'm also passionate about art, design, and exploring new technologies. I believe in continuous learning and enjoy challenges that push me out of my comfort zone.</p>
+            <a href="#" id="hireme" class="btn popinss" target="_blank">Hire Me</a>
+        </div>
+        <div class="about-image flex s-center items-center">
+            <img src="{% static 'images/about.png' %}" alt="About Me" class="about-image">
+        </div>
+    </div>
+</section>
+
+
+    {% comment %} ==============skills section=======
+    <section id="Skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="services-container flex s-around h-50">
+        {% comment %} <div class=" skills-left flex s-center items-center">
+            <img src="{%static 'images/pro.webp'%}" alt="">
+        </div> {% endcomment %}
+
+        {% comment %} <div class="skills-right flex items-center">
+            <div class="skillss-container">
+                <div class="java bar p-relative"><span class="bar-content left t-white"> Python</span><span
+                        class="bar-content right-skills t-white">70%</span></div>
+                <div class="html bar p-relative"><span class="bar-content left t-white">HTML</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                <div class="css bar p-relative"><span class="bar-content left t-white">CSS</span><span
+                        class="bar-content right-skills t-white">80%</span></div>
+                <div class="js bar p-relative"><span class="bar-content left t-white">JavaScript</span><span
+                        class="bar-content right-skills t-white">60%</span></div>
+                <div class="python bar p-relative"><span class="bar-content left t-white">Django RESTFul APIs</span><span
+                        class="bar-content right-skills t-white">95%</span></div> 
+                <div class="mysql bar p-relative"><span class="bar-content left t-white">MySQL</span><span
+                        class="bar-content right-skills t-white">80%</span></div>   
+                <div class="learning bar p-relative"><span class="bar-content left t-white">Core Java</span><span
+                        class="bar-content right-skills t-white">90%</span></div>       
+            </div>
+        </div>
+        </div>
+</section> {% endcomment %} 
+
+<section id="Skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="services-container flex s-around h-50">
+        {% comment %} <div class=" skills-left flex s-center items-center">
+            <img src="{%static 'images/pro.webp'%}" alt="">
+        </div> {% endcomment %}
+
+        <div class="skills-right flex items-center">
+            <div class="skillss-container">
+                <div class="java bar p-relative"><span class="bar-content left t-white"> Python</span><span
+                        class="bar-content right-skills t-white">70%</span></div>
+                <div class="html bar p-relative"><span class="bar-content left t-white">HTML</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                <div class="css bar p-relative"><span class="bar-content left t-white">CSS</span><span
+                        class="bar-content right-skills t-white">80%</span></div>
+                <div class="js bar p-relative"><span class="bar-content left t-white">JavaScript</span><span
+                        class="bar-content right-skills t-white">60%</span></div>
+                <div class="python bar p-relative"><span class="bar-content left t-white">Django RESTFul APIs</span><span
+                        class="bar-content right-skills t-white">95%</span></div> 
+                <div class="mysql bar p-relative"><span class="bar-content left t-white">MySQL</span><span
+                        class="bar-content right-skills t-white">80%</span></div>   
+                <div class="learning bar p-relative"><span class="bar-content left t-white">Core Java</span><span
+                        class="bar-content right-skills t-white">90%</span></div>       
+            </div>
+        </div>
+        </div>
+    </section>
+
+{% comment %} Certificates {% endcomment %}
+
+<section class="team" style="margin-top: 4rem;">
+    <h1 class="heading" style="margin-top: -1.5rem;" id="team">Certificates</h1>
+    <p></p>
+    <div class="row">
+        <div class="card">
+            <div class="info">
+                <h3>Python Certificates</h3>
+                <div class="certificate-info">
+                    <a href="https://drive.google.com/file/d/1xRHYKenS8AeQ1SgqUips_hx69q9Tgdwy/view?usp=sharing" target="_blank" class="fa fa-shield">Lyriclious EdTech</a>
+                </div>
+                <div class="certificate-info">
+                    
+                    <a href="https://drive.google.com/file/d/1lrSZx2QMOC2jrgK70DAGirRvJLSm_7fh/view?usp=sharing" target="_blank" class="fa fa-shield">University of Michigan (Coursera)</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>SAS Analysis Certificate</h3>
+                <div class="certificate-info">
+                    
+                    <a href="https://drive.google.com/file/d/1ZKyJNS4Qs0YOQGnR7us59obX_ULxpbyP/view?usp=sharing" target="_blank" class="fa fa-shield">Great learning</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Social Media Certificate</h3>
+                <div class="certificate-info">
+                    <a href="https://drive.google.com/file/d/1aS6ep_ZAVchJ2kL_p_2aFUR6v7d-Rd3R/view?usp=sharing" target="_blank" class="fa fa-shield">Swami Shiksha Charitable Trust </a>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Projects Section -->
+<section id="Project">
+    <h1 class=" t-center my-2 t-white f-2">Projects</h1>
+    <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col s-center items-center">
+               
+                <h1 class="t-white poppins">Amazone-clone</h1>
+                <p class="t-white poppins">Developed a responsive front-end clone of Amazon's e-commerce site using HTML5, CSS3, and Font Awesome. Features include a functional navigation bar, search functionality, product categories, and a comprehensive footer, all adapting seamlessly across devices. Utilized Flexbox and media queries for responsive design, ensuring a consistent user experience. This project showcases proficiency in front-end development and responsive design principles.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/sneha01vaish/AMAZON_CLONE"
+                        target="_blanks" class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://sneha01vaish.github.io/AMAZON_CLONE/" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+               
+                <h1 class="t-white poppins">Employee management system</h1>
+                <p class="t-white poppins">Developed an Employee Management System using Django for backend and Bootstrap for frontend, streamlining employee data management. Implemented features to view, add, and remove employees, and filter employee details. Integrated SQLite database for efficient data storage and retrieval. The project improved administrative efficiency and accuracy in managing employee records.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/sneha01vaish/Employee_management_system" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+               
+                <h1 class="t-white poppins">TO DO APP</h1>
+                <p class="t-white poppins">With Django, I developed a dynamic to-do list application with user authentication, task management, and image upload capabilities.To manage tasks efficiently, users can sign up and log in securely, as well as attach images for better organization. The Django framework and RESTful APIs ensured seamless user interaction and responsiveness across multiple devices.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/sneha01vaish/TODO_WEBAPP" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                    <a href="http://sneha1vaish.pythonanywhere.com/" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+               
+                <h1 class="t-white poppins">Weather App</h1>
+                <p class="t-white poppins">This is My portfolio website which is created with HTML,CSS and Javascript which describe my skill and knowledge.My portfolio website showcases my work in a sleek and minimalist design, allowing the focus to be on the content itself. The layout is uncluttered, making it easy for visitors to navigate and explore my projects.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/sneha01vaish/weather_app" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                   
+                </div>
+            </div>
+           
+         </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="Contact" class="m-b-1">
+        <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
+        {% if messages %}
+          <ul class="messages" style="text-align:center;">
+           {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+           {% endfor %}
+         </ul>
+        {% endif %}
+
+        <div class="contact-container flex s-around items-centers">
+            <div class="form" id="contactForm">
+                <form method="post" action="/" > 
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email" name="email" id="" class="poppins" placeholder="Enter Your Email"
+                            required>
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="phone" name="number" id="" class="poppins" placeholder="Enter Your Phone"
+                            required>
+                    </div>
+                    
+                    <div class="textarea form-div">
+                        <textarea name="content" id="textarea" cols="30" rows="10" class="poppins"
+                            placeholder="Enter Messages"></textarea>
+                    </div>
+                    <button type="submit" class="btn poppins" id="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppinss">Home</a></li>
+            <li><a href="#about" class="poppinss">About</a></li>
+            <li><a href="#skills" class="poppinss">Skills</a></li>
+            <li><a href="#projects" class="poppinss">Projects</a></li>
+            <li><a href="#Certificates" class="t-white roboto">Awards</a></li>
+            <li><a href="#Contact" class="t-white roboto">Contact</a></li>
+            
+        </ul>
+        <ul class="flex s-center w-80 font-awesome ">
+            <a href="" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+                <a href="" target="_blank">
+                    <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+            
+        </ul>
+        <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span class="cpy-white poppins">Error By Night 
+                </span></p>
+
+    </footer>
+</body>
+</html>
